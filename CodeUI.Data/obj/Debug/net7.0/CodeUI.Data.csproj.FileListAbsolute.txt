@@ -1,0 +1,15 @@
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\bin\Debug\net7.0\CodeUI.Data.deps.json
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\bin\Debug\net7.0\CodeUI.Data.runtimeconfig.json
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\bin\Debug\net7.0\CodeUI.Data.dll
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\bin\Debug\net7.0\CodeUI.Data.pdb
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.csproj.AssemblyReference.cache
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.AssemblyInfoInputs.cache
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.AssemblyInfo.cs
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.csproj.CoreCompileInputs.cache
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\EFCoreSqlServerNetTopologySuite.cs
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.dll
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\refint\CodeUI.Data.dll
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.pdb
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\CodeUI.Data.genruntimeconfig.cache
+C:\Codes\Capstone\CodeUI_API\CodeUI.Data\obj\Debug\net7.0\ref\CodeUI.Data.dll
