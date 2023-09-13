@@ -6,7 +6,7 @@ using CodeUI.Data.MakeConnection;
 using CodeUI.Data.Repository;
 using CodeUI.Data.UnitOfWork;
 using CodeUI.Service.Helpers;
-//using FINE.Service.Service;
+using CodeUI.Service.Service;
 using FirebaseAdmin;
 using Google.Apis.Auth.AspNetCore3;
 using Google.Apis.Auth.OAuth2;
@@ -111,10 +111,10 @@ namespace CodeUI.API
 
             #region Firebase
             var pathToKey = Path.Combine(Directory.GetCurrentDirectory(), "Keys", "firebase.json");
-            //FirebaseApp.Create(new AppOptions
-            //{
-            //    Credential = GoogleCredential.FromFile(pathToKey)
-            //});
+            FirebaseApp.Create(new AppOptions
+            {
+                Credential = GoogleCredential.FromFile(pathToKey)
+            });
             #endregion 
 
         }
@@ -126,9 +126,9 @@ namespace CodeUI.API
 
             //builder.RegisterType<Service>().As<IService>();
 
-            builder.Register<IRedisClientsManager>(c =>
-            new RedisManagerPool(Configuration.GetConnectionString("RedisConnectionString")));
-            builder.Register(c => c.Resolve<IRedisClientsManager>().GetCacheClient());
+            //builder.Register<IRedisClientsManager>(c =>
+            //new RedisManagerPool(Configuration.GetConnectionString("RedisConnectionString")));
+            //builder.Register(c => c.Resolve<IRedisClientsManager>().GetCacheClient());
 
             builder.RegisterGeneric(typeof(GenericRepository<>))
             .As(typeof(IGenericRepository<>))

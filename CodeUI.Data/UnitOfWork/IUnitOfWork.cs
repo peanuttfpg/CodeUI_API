@@ -1,5 +1,4 @@
 ﻿using CodeUI.Data.Repository;
-using CodeUI.Data.Repository;
 
 namespace CodeUI.Data.UnitOfWork
 {

@@ -28,8 +28,14 @@ namespace CodeUI.Service.Helpers
         }
         public enum AccountTypeEnum
         {
-            CreditAccount = 1,
-            PointAccount = 2
+            [Display(Name = "Guest")]
+            Guest = 1,
+            [Display(Name = "Creator")]
+            Creator = 2,
+            [Display(Name = "Moderator")]
+            Mod = 3,
+            [Display(Name = "Administrator")]
+            Admin = 4
         }
     }
 }

@@ -6,7 +6,7 @@ using System.Reflection;
 using System.Linq.Dynamic.Core;
 using CodeUI.Service.Attributes;
 using System.Collections;
-//using CodeUI.Data.Entity;
+using CodeUI.Data.Entity;
 
 namespace CodeUI.Service.Utilities
 {

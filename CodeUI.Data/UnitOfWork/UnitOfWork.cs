@@ -1,17 +1,14 @@
 ﻿using CodeUI.Data.Repository;
 using CodeUI.Data.UnitOfWork;
-//using CodeUI.Data.Entity;
-using CodeUI.Data.Repository;
+using CodeUI.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 
 namespace CodeUI.Data.UnitOfWork
 {
     public class UnitOfWork : IUnitOfWork
     {
-        //private readonly CodeUIContext _context;
-        private readonly DbContext _context;
-
-        public UnitOfWork(/*CodeUIContext*/ DbContext context)
+        private readonly CodeUiContext _context;
+        public UnitOfWork(CodeUiContext context)
         {
             _context = context;
         }

@@ -364,3 +364,18 @@ FodyWeavers.xsd
 /CodeUI_API.sln
 
 *.vsidx
+*.v2
+
+*.2
+
+CodeUI.API/obj/Debug/net7.0/
+
+CodeUI.Data/obj/Debug/net7.0/
+
+CodeUI.Service/obj/Debug/net7.0/refint/
+
+CodeUI.Service/bin/Debug/net7.0/
+
+CodeUI.API/bin/Debug/net7.0/
+
+CodeUI.Service/obj/Debug/net7.0/

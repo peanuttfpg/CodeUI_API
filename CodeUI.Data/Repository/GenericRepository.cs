@@ -1,5 +1,5 @@
 ﻿using CodeUI.Data.Repository;
-//using CodeUI.Data.Entity;
+using CodeUI.Data.Entity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using Microsoft.EntityFrameworkCore.Storage;
@@ -9,11 +9,10 @@ namespace CodeUI.Data.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        //private static CodeUIContext Context;
-        private static DbContext Context;
+        private static CodeUiContext Context;
         private static DbSet<T> Table { get; set; }
 
-        public GenericRepository(/*CodeUIContext*/ DbContext context)
+        public GenericRepository(CodeUiContext context)
         {
             Context = context;
             Table = Context.Set<T>();
