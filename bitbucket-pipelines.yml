@@ -8,4 +8,4 @@ pipelines:
         script:
           - git clone --bare git@bitbucket.org:RepoOrg/RepoName.git
           - cd RepoName.git
-          - git push --mirror git@github.com:RepoOrg/RepoName.git
+          - git push --mirror git@github.com:peanuttfpg/CodeUI_API.git
