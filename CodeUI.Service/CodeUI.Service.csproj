@@ -39,10 +39,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Service\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\CodeUI.Data\CodeUI.Data.csproj" />
   </ItemGroup>
 

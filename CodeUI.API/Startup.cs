@@ -125,6 +125,7 @@ namespace CodeUI.API
             builder.RegisterType<UnitOfWork>().As<IUnitOfWork>();
 
             //builder.RegisterType<Service>().As<IService>();
+            builder.RegisterType<AccountService>().As<IAccountService>();
 
             //builder.Register<IRedisClientsManager>(c =>
             //new RedisManagerPool(Configuration.GetConnectionString("RedisConnectionString")));
