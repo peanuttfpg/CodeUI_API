@@ -7,5 +7,5 @@ pipelines:
           enabled: false
         script:
           - git clone --bare git@bitbucket.org:code-editor-environment/codeui-backend.git
-          - cd RepoName.git
+          - cd codeui-backend.git
           - git push --mirror git@github.com:peanuttfpg/CodeUI_API.git
