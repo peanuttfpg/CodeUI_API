@@ -35,14 +35,12 @@ namespace CodeUI.Service.Service
     {
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly IAccountService _accountService;
         private readonly IConfiguration _configuration;
 
-        public AccountService(IUnitOfWork unitOfWork, IMapper mapper, IAccountService accountService, IConfiguration configuration)
+        public AccountService(IUnitOfWork unitOfWork, IMapper mapper, IConfiguration configuration)
         {
             _unitOfWork = unitOfWork;
             _mapper = mapper;
-            _accountService = accountService;
             _configuration = configuration;
         }
 

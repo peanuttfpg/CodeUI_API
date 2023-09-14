@@ -103,7 +103,7 @@ namespace CodeUI.Service.Utilities
                     DateTime dt = (DateTime)propertyVal;
                     source = source.Where($"{item.Name} >= @0 && {item.Name} < @1", dt.Date, dt.Date.AddDays(1));
                 }
-                else if (item.PropertyType == typeof(Guid))
+                else if (item.PropertyType == typeof(int))
                 {
                     source = source.Where($"{item.Name} == @{item.Name}", propertyVal);
                 }

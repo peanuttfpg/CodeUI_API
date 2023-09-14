@@ -24,7 +24,7 @@ namespace CodeUI.API.Controllers
         /// <param name="data"></param>
         /// <returns></returns>
         [HttpPost("loginByMail")]
-        public async Task<ActionResult<AccountResponse>> LoginByMail([FromBody] ExternalAuthRequest data)
+        public async Task<ActionResult<BaseResponseViewModel<AccountResponse>>> LoginByMail([FromBody] ExternalAuthRequest data)
         {
             try
             {
@@ -41,7 +41,7 @@ namespace CodeUI.API.Controllers
         /// Login via password
         /// </summary>
         [HttpPost("login")]
-        public async Task<ActionResult<AccountResponse>> LoginByPassword(LoginRequest request)
+        public async Task<ActionResult<BaseResponseViewModel<AccountResponse>>> LoginByPassword(LoginRequest request)
         {
             try
             {
@@ -49,6 +49,43 @@ namespace CodeUI.API.Controllers
                 return Ok(result);
             }
             catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+
+        ///<summary>
+        /// Register a new account
+        ///</summary>
+        ///<param name="request"></param>
+        ///<returns></returns>
+        [HttpPost("register")]
+        public async Task<ActionResult<BaseResponseViewModel<AccountResponse>>> Register([FromBody] CreateAccountRequest request)
+        {
+            try
+            {
+                var result = await _accountService.CreateAccount(request);
+                return Ok(result);
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        ///<summary>
+        /// Get all accounts with filter
+        /// </summary>
+        [HttpGet("getAll")]
+        public async Task<ActionResult<BaseResponsePagingViewModel<AccountResponse>>> GetAll([FromQuery]AccountResponse filter, [FromQuery] PagingRequest paging)
+        {
+            try
+            {
+                var result = await _accountService.GetAccounts(filter, paging);
+                return Ok(result);
+            }
+            catch(Exception ex)
             {
                 return BadRequest(ex.Message);
             }
