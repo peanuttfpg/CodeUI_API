@@ -126,6 +126,7 @@ namespace CodeUI.API
 
             //builder.RegisterType<Service>().As<IService>();
             builder.RegisterType<AccountService>().As<IAccountService>();
+            builder.RegisterType<ProfileService>().As<IProfileService>();
 
             //builder.Register<IRedisClientsManager>(c =>
             //new RedisManagerPool(Configuration.GetConnectionString("RedisConnectionString")));

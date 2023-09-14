@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CodeUI.Service.DTO.Request
+namespace CodeUI.Service.DTO.Request.ProfileRequest
 {
     public class CreateProfileRequest
     {

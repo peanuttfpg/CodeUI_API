@@ -6,6 +6,7 @@ using CodeUI.Data.UnitOfWork;
 using CodeUI.Service.Attributes;
 using CodeUI.Service.DTO.Request;
 using CodeUI.Service.DTO.Request.AccountRequest;
+using CodeUI.Service.DTO.Request.ProfileRequest;
 using CodeUI.Service.DTO.Response;
 using CodeUI.Service.Helpers;
 using CodeUI.Service.Utilities;
